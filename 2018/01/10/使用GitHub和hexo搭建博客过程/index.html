@@ -116,7 +116,8 @@
 <meta property="og:image" content="https://luogjy.github.io/Luogjy.github.io/2018/01/10/使用GitHub和hexo搭建博客过程/20180110214341.png">
 <meta property="og:image" content="https://luogjy.github.io/Luogjy.github.io/2018/01/10/使用GitHub和hexo搭建博客过程/20180111093420.png">
 <meta property="og:image" content="https://luogjy.github.io/Luogjy.github.io/2018/01/10/使用GitHub和hexo搭建博客过程/20180111094104.png">
-<meta property="og:updated_time" content="2018-01-11T03:46:25.052Z">
+<meta property="og:image" content="https://luogjy.github.io/Luogjy.github.io/2018/01/10/使用GitHub和hexo搭建博客过程/20180111122534.png">
+<meta property="og:updated_time" content="2018-01-11T04:39:19.750Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用GitHub和hexo搭建博客过程">
 <meta name="twitter:description" content="其实网上已经有好多这样的教程了，然而我还是要写( • ̀ω•́ )✧因为搭建这博客折腾了我两天啊(╯‵□′)╯︵┻━┻。希望能给以后的同学多一篇参考资料吧(￣▽￣)／">
@@ -427,6 +428,18 @@
 <li>把域名绑定自己的博客<br>然后参考这里 <a href="http://blog.csdn.net/Hoshea_chx/article/details/78826689" target="_blank" rel="noopener">http://blog.csdn.net/Hoshea_chx/article/details/78826689</a><br>我把图截过来，侵删</li>
 </ul>
 <p><img src="/Luogjy.github.io/2018/01/10/使用GitHub和hexo搭建博客过程/20180111094104.png" alt="命令"></p>
+<h2 id="一些错误处理"><a href="#一些错误处理" class="headerlink" title="一些错误处理"></a>一些错误处理</h2><ul>
+<li><p>博客搭建完第n天以后发布博客，执行命令 hexo d 后出现以下错误<br><img src="/Luogjy.github.io/2018/01/10/使用GitHub和hexo搭建博客过程/20180111122534.png" alt="命令"></p>
+<blockquote>
+<p>解决方案：<br>执行命令<br>git config –global http.sslVerify false<br>然后重新执行hexo d 即可</p>
+</blockquote>
+</li>
+<li><p>已经成功执行过npm install hexo-asset-image –save命令，而且正确地引入了图片以后，本地通过<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> 预览时看不到引入的图片</p>
+<blockquote>
+<p>解决方案：<br>发布上去GitHub上再看看，一般已经成功看到图片了。</p>
+</blockquote>
+</li>
+</ul>
 
       
     </div>
@@ -597,7 +610,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#环境搭建"><span class="nav-number">1.</span> <span class="nav-text">环境搭建</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#搭建本地Hexo项目"><span class="nav-number">2.</span> <span class="nav-text">搭建本地Hexo项目</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化项目"><span class="nav-number">2.1.</span> <span class="nav-text">初始化项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用NexT主题"><span class="nav-number">2.2.</span> <span class="nav-text">使用NexT主题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建GitHub仓库"><span class="nav-number">3.</span> <span class="nav-text">创建GitHub仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本地Hexo项目与GitHub仓库关联"><span class="nav-number">4.</span> <span class="nav-text">本地Hexo项目与GitHub仓库关联</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#怎么发布博客"><span class="nav-number">5.</span> <span class="nav-text">怎么发布博客</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#域名绑定"><span class="nav-number">6.</span> <span class="nav-text">域名绑定</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#环境搭建"><span class="nav-number">1.</span> <span class="nav-text">环境搭建</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#搭建本地Hexo项目"><span class="nav-number">2.</span> <span class="nav-text">搭建本地Hexo项目</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化项目"><span class="nav-number">2.1.</span> <span class="nav-text">初始化项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用NexT主题"><span class="nav-number">2.2.</span> <span class="nav-text">使用NexT主题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建GitHub仓库"><span class="nav-number">3.</span> <span class="nav-text">创建GitHub仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本地Hexo项目与GitHub仓库关联"><span class="nav-number">4.</span> <span class="nav-text">本地Hexo项目与GitHub仓库关联</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#怎么发布博客"><span class="nav-number">5.</span> <span class="nav-text">怎么发布博客</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#域名绑定"><span class="nav-number">6.</span> <span class="nav-text">域名绑定</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一些错误处理"><span class="nav-number">7.</span> <span class="nav-text">一些错误处理</span></a></li></ol></div>
             
 
           </div>
